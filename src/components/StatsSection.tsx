@@ -54,7 +54,7 @@ const Counter = ({ value, label }: { value: string; label: string }) => {
 
 const stats = [
   { value: "5+", label: "Languages" },
-  { value: "10+", label: "Projects" },
+  { value: "5+", label: "Projects" },
   { value: "240+", label: "Commits" },
   { value: "5+", label: "Certificates" },
 ];
