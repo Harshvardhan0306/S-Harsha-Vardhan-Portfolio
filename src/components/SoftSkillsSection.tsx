@@ -52,20 +52,25 @@ const SoftSkillsSection = () => {
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            whileHover={{ scale: 1.03 }}
-            transition={{ duration: 0.4, delay: index * 0.1 }}
-            className="glass p-6 rounded-xl border border-border/50 hover:border-primary/50 hover:shadow-glow transition-all duration-300 group"
+            whileHover={{ y: -5 }}
+            transition={{ duration: 0.5, delay: index * 0.1 }}
+            className="glass-premium p-8 rounded-2xl border border-white/10 group hover:border-primary/50 transition-all duration-500"
           >
-            <div className="flex items-start gap-4">
-              <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center shrink-0 group-hover:bg-primary/20 transition-colors">
-                <skill.icon className="w-6 h-6 text-primary group-hover:scale-110 transition-transform" />
+            <div className="flex flex-col gap-6">
+              <div className="w-14 h-14 rounded-2xl bg-white/5 flex items-center justify-center shrink-0 group-hover:bg-primary/10 transition-all duration-500 border border-white/5 group-hover:border-primary/20">
+                <skill.icon className="w-7 h-7 text-muted-foreground group-hover:text-primary transition-colors" />
               </div>
               <div>
-                <h3 className="text-xl font-semibold mb-2 font-display">{skill.title}</h3>
-                <p className="text-muted-foreground text-sm leading-relaxed">
+                <h3 className="text-xl font-bold mb-3 font-display tracking-tight text-foreground/90 group-hover:text-foreground transition-colors">{skill.title}</h3>
+                <p className="text-muted-foreground/80 text-sm leading-relaxed group-hover:text-muted-foreground transition-colors">
                   {skill.description}
                 </p>
               </div>
+            </div>
+            
+            {/* Corner decorator */}
+            <div className="absolute top-0 right-0 p-4 opacity-0 group-hover:opacity-100 transition-opacity">
+              <div className="w-2 h-2 rounded-full bg-primary/20" />
             </div>
           </motion.div>
         ))}

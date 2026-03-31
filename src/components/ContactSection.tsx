@@ -5,7 +5,7 @@ import SectionWrapper from "./SectionWrapper";
 
 const contactLinks = [
   { icon: Mail, label: "haarshavardhan0306@gmail.com", href: "mailto:haarshavardhan0306@gmail.com" },
-  { icon: Linkedin, label: "LinkedIn", href: "https://linkedin.com/in/s-harsh-vardhan" },
+  { icon: Linkedin, label: "LinkedIn", href: "https://www.linkedin.com/in/s-harsh-vardhan/" },
   { icon: Github, label: "GitHub", href: "https://github.com/Harshvardhan0306" },
 ];
 
@@ -20,77 +20,69 @@ const ContactSection = () => {
   };
 
   return (
-    <SectionWrapper id="contact" title="Contact" subtitle="Let's connect and build something great">
-      <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 max-w-5xl mx-auto">
-        {/* Info */}
+    <SectionWrapper id="contact" title="Get in Touch" subtitle="Let's build something amazing together">
+      <div className="max-w-4xl mx-auto">
         <motion.div
-          initial={{ x: -40, opacity: 0 }}
-          whileInView={{ x: 0, opacity: 1 }}
+          initial={{ y: 30, opacity: 0 }}
+          whileInView={{ y: 0, opacity: 1 }}
           viewport={{ once: true }}
-          transition={{ duration: 0.6 }}
-          className="space-y-6"
+          transition={{ duration: 0.8, ease: "circOut" }}
+          className="glass-premium rounded-[2.5rem] p-10 md:p-16 border border-white/10 relative overflow-hidden"
         >
-          <p className="text-muted-foreground leading-relaxed">
-            I'm always open to discussing new projects, creative ideas, or opportunities to be part of your vision.
-          </p>
-          <div className="space-y-4">
-            {contactLinks.map((link) => (
-              <a
-                key={link.label}
-                href={link.href}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="flex items-center gap-3 text-secondary-foreground hover:text-primary transition-colors group"
+          {/* Decorative Background */}
+          <div className="absolute -top-24 -right-24 w-64 h-64 bg-primary/10 blur-[100px]" />
+          <div className="absolute -bottom-24 -left-24 w-64 h-64 bg-purple-500/10 blur-[100px]" />
+
+          <div className="relative z-10 text-center">
+            <h3 className="text-3xl md:text-5xl font-display font-bold mb-8 tracking-tight">
+              Have a project in mind?
+            </h3>
+            <p className="text-lg md:text-xl text-muted-foreground/90 mb-12 max-w-2xl mx-auto leading-relaxed">
+              I'm always open to discussing new projects, creative ideas, or opportunities 
+              to be part of your vision.
+            </p>
+
+            <div className="flex flex-col md:flex-row items-center justify-center gap-8">
+              <motion.a
+                whileHover={{ scale: 1.05, y: -5 }}
+                whileTap={{ scale: 0.95 }}
+                href="mailto:harshasv0306@gmail.com"
+                className="flex items-center gap-3 bg-primary text-primary-foreground font-black px-10 py-5 rounded-2xl shadow-glow hover:shadow-primary/40 transition-all text-lg"
               >
-                <div className="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center group-hover:shadow-glow transition-shadow">
-                  <link.icon size={18} className="text-primary" />
-                </div>
-                <span className="text-sm">{link.label}</span>
-              </a>
-            ))}
+                <Mail size={24} /> Say Hello
+              </motion.a>
+              
+              <div className="flex gap-6">
+                {[
+                  { icon: Github, href: "https://github.com/Harshvardhan0306" },
+                  { icon: Linkedin, href: "https://www.linkedin.com/in/s-harsh-vardhan/" },
+                  { icon: Send, href: "https://wa.me/917993077399" }
+                ].map((social, i) => (
+                  <motion.a
+                    key={i}
+                    whileHover={{ scale: 1.2, rotate: 5, color: "hsl(var(--primary))" }}
+                    href={social.href}
+                    target="_blank"
+                    className="w-14 h-14 rounded-xl bg-white/5 border border-white/10 flex items-center justify-center text-muted-foreground transition-all"
+                  >
+                    <social.icon size={24} />
+                  </motion.a>
+                ))}
+              </div>
+            </div>
+            
+            <div className="mt-16 pt-10 border-t border-white/5 flex flex-col md:flex-row items-center justify-between gap-6 text-sm font-bold uppercase tracking-widest text-muted-foreground/40">
+              <div className="flex items-center gap-3">
+                <div className="w-2 h-2 rounded-full bg-primary animate-pulse" />
+                Open for Opportunities
+              </div>
+              <div className="flex items-center gap-3">
+                <div className="w-2 h-2 rounded-full bg-purple-500" />
+                Based in India
+              </div>
+            </div>
           </div>
         </motion.div>
-
-        {/* Form */}
-        <motion.form
-          onSubmit={handleSubmit}
-          initial={{ x: 40, opacity: 0 }}
-          whileInView={{ x: 0, opacity: 1 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.6 }}
-          className="glass rounded-xl p-6 space-y-4"
-        >
-          <input
-            type="text"
-            placeholder="Your Name"
-            value={form.name}
-            onChange={(e) => setForm({ ...form, name: e.target.value })}
-            required
-            className="w-full bg-muted/50 border border-border rounded-lg px-4 py-3 text-sm text-foreground placeholder:text-muted-foreground focus:outline-none focus:border-primary/50 transition-colors"
-          />
-          <input
-            type="email"
-            placeholder="Your Email"
-            value={form.email}
-            onChange={(e) => setForm({ ...form, email: e.target.value })}
-            required
-            className="w-full bg-muted/50 border border-border rounded-lg px-4 py-3 text-sm text-foreground placeholder:text-muted-foreground focus:outline-none focus:border-primary/50 transition-colors"
-          />
-          <textarea
-            placeholder="Your Message"
-            value={form.message}
-            onChange={(e) => setForm({ ...form, message: e.target.value })}
-            required
-            rows={4}
-            className="w-full bg-muted/50 border border-border rounded-lg px-4 py-3 text-sm text-foreground placeholder:text-muted-foreground focus:outline-none focus:border-primary/50 transition-colors resize-none"
-          />
-          <button
-            type="submit"
-            className="w-full bg-gradient-primary text-primary-foreground font-semibold py-3 rounded-lg flex items-center justify-center gap-2 hover:opacity-90 transition-opacity shadow-glow"
-          >
-            <Send size={16} /> Send Message
-          </button>
-        </motion.form>
       </div>
     </SectionWrapper>
   );
