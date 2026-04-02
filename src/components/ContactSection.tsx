@@ -35,11 +35,10 @@ const ContactSection = () => {
 
           <div className="relative z-10 text-center">
             <h3 className="text-3xl md:text-5xl font-display font-bold mb-8 tracking-tight">
-              Have a project in mind?
+              Let’s Connect
             </h3>
             <p className="text-lg md:text-xl text-muted-foreground/90 mb-12 max-w-2xl mx-auto leading-relaxed">
-              I'm always open to discussing new projects, creative ideas, or opportunities 
-              to be part of your vision.
+              Open to internships, collaborations, and data-driven opportunities.
             </p>
 
             <div className="flex flex-col md:flex-row items-center justify-center gap-8">
@@ -56,7 +55,6 @@ const ContactSection = () => {
                 {[
                   { icon: Github, href: "https://github.com/Harshvardhan0306" },
                   { icon: Linkedin, href: "https://www.linkedin.com/in/s-harsh-vardhan/" },
-                  { icon: Send, href: "https://wa.me/917993077399" }
                 ].map((social, i) => (
                   <motion.a
                     key={i}
