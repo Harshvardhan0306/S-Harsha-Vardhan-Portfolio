@@ -5,7 +5,11 @@ import {
   SiC,
   SiCplusplus,
   SiMysql,
-  SiJupyter
+  SiJupyter,
+  SiPandas,
+  SiNumpy,
+  SiScikitlearn,
+  SiFigma,
 } from "react-icons/si";
 import { FaJava } from "react-icons/fa";
 import { IoLogoTableau } from "react-icons/io5";
@@ -18,7 +22,10 @@ import {
   Database,
   Code2,
   Network,
-  BarChart3 as PowerBiIcon // Fallback for Power BI
+  Binary,
+  Activity,
+  Layers,
+  BarChart,
 } from "lucide-react";
 import SectionWrapper from "./SectionWrapper";
 
@@ -27,33 +34,38 @@ const categories = [
     title: "Languages",
     items: [
       { name: "Python", icon: SiPython },
-      { name: "C", icon: SiC },
-      { name: "C++", icon: SiCplusplus },
-      { name: "Java", icon: FaJava },
       { name: "SQL", icon: SiMysql },
-    ],
-  },
-  {
-    title: "Tools / Tech",
-    items: [
-      { name: "Power BI", icon: PowerBiIcon },
-      { name: "Tableau", icon: IoLogoTableau },
-      { name: "MySQL", icon: SiMysql },
-      { name: "Excel", icon: PiMicrosoftExcelLogo },
-      { name: "Jupyter Notebook", icon: SiJupyter },
-      { name: "VS Code", icon: VscVscodeInsiders },
+      { name: "C++", icon: SiCplusplus },
+      { name: "C", icon: SiC },
+      { name: "Java", icon: FaJava },
     ],
   },
   {
     title: "Concepts",
     items: [
-      { name: "Machine Learning", icon: BrainCircuit },
       { name: "Data Analysis", icon: BarChart3 },
+      { name: "Machine Learning", icon: BrainCircuit },
+      { name: "Statistical Analysis", icon: Activity },
+      { name: "Feature Engineering", icon: Layers },
       { name: "Data Visualization", icon: LineChart },
-      { name: "Statistics", icon: BarChart3 },
-      { name: "DBMS", icon: Database },
-      { name: "OOP", icon: Code2 },
-      { name: "DSA", icon: Network },
+      { name: "Data Structures & Algorithms", icon: Binary },
+    ],
+  },
+  {
+    title: "Tools / Libraries",
+    items: [
+      { name: "Pandas", icon: SiPandas },
+      { name: "NumPy", icon: SiNumpy },
+      { name: "Scikit-learn", icon: SiScikitlearn },
+      { name: "Matplotlib", icon: BarChart },
+      { name: "Seaborn", icon: LineChart },
+      { name: "Power BI", icon: BarChart3 },
+      { name: "Tableau", icon: IoLogoTableau },
+      { name: "MySQL", icon: SiMysql },
+      { name: "Excel", icon: PiMicrosoftExcelLogo },
+      { name: "Jupyter Notebook", icon: SiJupyter },
+      { name: "VS Code", icon: VscVscodeInsiders },
+      { name: "Figma", icon: SiFigma },
     ],
   },
 ];

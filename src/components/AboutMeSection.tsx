@@ -119,15 +119,15 @@ const AboutMeSection = () => {
               
               <div className="space-y-6 text-base md:text-lg leading-relaxed text-muted-foreground/90 font-body">
                 <p>
-                  I am a dedicated <span className="text-white font-semibold">Data Science</span> enthusiast currently pursuing my B.Tech in CSE (2027). My interest lies in working with data, analytics, and <span className="text-primary font-medium">machine learning</span> to uncover meaningful patterns and solve practical real-world problems.
+                  I am a dedicated <span className="text-white font-semibold">Data Science</span> enthusiast currently pursuing my B.Tech in CSE (2027). My expertise lies in working with data, analytics, and <span className="text-primary font-medium">machine learning</span> to uncover meaningful patterns and solve practical real-world problems.
                 </p>
                 
                 <p>
-                  With a strong foundation in <span className="text-white font-semibold">Python</span>, <span className="text-white font-semibold">SQL</span>, and statistical analysis, I enjoy exploring datasets, building <span className="text-primary font-medium">predictive models</span>, and extracting insights that support better decision-making. My work so far has involved data preprocessing, feature engineering, visualization, and machine learning-based analysis across <span className="text-white font-semibold italic">real-world datasets</span>.
+                  With a strong foundation in <span className="text-white font-semibold">Python</span>, <span className="text-white font-semibold">SQL</span>, and statistical analysis, I enjoy exploring datasets, building <span className="text-primary font-medium">predictive models</span>, and extracting insights that support analytical decision-making. My work involves data preprocessing, feature engineering, and visualization across <span className="text-white font-semibold italic">diverse datasets</span>.
                 </p>
-
+                
                 <p>
-                  I am particularly interested in using data to create solutions that are not only technically sound, but also useful, scalable, and impactful. As I continue to grow, I aim to strengthen my expertise in <span className="text-white font-semibold">data science</span>, <span className="text-primary font-medium">analytics</span>, and intelligent systems while building projects that bridge data with real-world value.
+                  I am focused on creating data-driven solutions that are technically sound, scalable, and impactful. As I continue to grow, I aim to strengthen my expertise in <span className="text-white font-semibold">data science</span> and <span className="text-primary font-medium">analytics</span> while building projects that bridge data with practical value.
                 </p>
               </div>
 

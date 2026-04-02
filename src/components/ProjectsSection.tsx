@@ -6,40 +6,52 @@ import FeaturedProject from "./FeaturedProject";
 const projects = [
   {
     title: "Bird Migration Analysis",
-    description: "Analyzed 10,000+ GPS data points to identify migration patterns using statistical techniques.",
+    description: "Data-driven study of avian movement patterns.",
     image: "/assets/bird.png",
-    tech: ["Python", "Pandas", "Statistics"],
+    tech: ["Python", "Pandas", "Matplotlib", "Statistics"],
     github: "https://github.com/Harshvardhan0306/Migratory-Bird-Movement-Analysis-Using-Data-Analytics-",
-    features: ["GPS Data Processing", "Spatio-temporal Analysis", "Pattern Recognition"],
+    bullets: [
+      "Analyzed 10,000+ GPS data points to identify migration patterns",
+      "Identified spatio-temporal trends using statistical techniques",
+      "Created visualizations for biological insights and movement clarity"
+    ],
     isFeatured: true
   },
   {
-    title: "Netflix Data Analysis & ML",
-    description: "Processed 16,000+ records and built a Random Forest model achieving high accuracy with low RMSE.",
+    title: "Netflix Analysis & ML",
+    description: "Analytical study of content and predictive modeling.",
     image: "/assets/netflix.png",
-    tech: ["Python", "Pandas", "Scikit-learn"],
+    tech: ["Python", "ML", "Pandas", "Scikit-Learn"],
     github: "https://github.com/Harshvardhan0306/Netflix-Dataset-Analysis-and-Machine-Learning-Modeling",
+    bullets: [
+      "Processed 16k+ records for content-based insights",
+      "Built a Random Forest model with high predictive accuracy",
+      "Evaluated performance using RMSE and accuracy metrics"
+    ],
   },
   {
-    title: "KidGuard – Parental Control System",
-    description: "Built a system to restrict unauthorized purchases, send alerts, and block harmful ads.",
+    title: "KidGuard Parental System",
+    description: "Security-focused application for safe digital environments.",
     image: "/assets/kidguard.png",
-    tech: ["Web App", "Security", "System Design"],
+    tech: ["Security", "Web Dev", "System Design"],
     github: "https://github.com/Harshvardhan0306",
+    bullets: [
+      "Built a system to restrict unauthorized purchases and ads",
+      "Integrated real-time alerts for parental monitoring",
+      "Designed a robust architecture for secure system control"
+    ],
   },
   {
     title: "Space Invader Game",
-    description: "Developed a Space Invader game using Python and Pygame, implementing core game logic and real-time rendering.",
+    description: "Classic arcade game development with OOP.",
     image: "/assets/space-invader.png",
     tech: ["Python", "Pygame", "OOP"],
     github: "https://github.com/Harshvardhan0306/space-Invader-Game-Development-Using-Python",
-  },
-  {
-    title: "Multithreading Simulator",
-    description: "Built a simulator demonstrating threading models and visualizing thread behavior using Tkinter.",
-    image: "/assets/multithreading.png",
-    tech: ["Python", "OS", "Tkinter"],
-    github: "https://github.com/Harshvardhan0306/Operating-Systems",
+    bullets: [
+      "Developed using Python and the Pygame library",
+      "Implemented core game physics and collision detection",
+      "Structured code using Object-Oriented Programming (OOP)"
+    ],
   },
 ];
 
@@ -57,7 +69,7 @@ const ProjectsSection = () => {
             image={featured.image}
             tech={featured.tech}
             github={featured.github}
-            highlights={featured.features || []}
+            highlights={featured.bullets || []}
           />
         )}
 
@@ -69,7 +81,7 @@ const ProjectsSection = () => {
               whileInView={{ y: 0, opacity: 1 }}
               viewport={{ once: true, margin: "-100px" }}
               transition={{ delay: i * 0.1, duration: 0.6, ease: "circOut" }}
-              className="glass-premium rounded-3xl overflow-hidden group hover:border-primary/30 transition-all duration-500 flex flex-col h-full"
+              className="glass-premium rounded-3xl overflow-hidden group hover:border-primary/50 hover:-translate-y-2 hover:shadow-glow transition-all duration-500 flex flex-col h-full relative"
             >
               <div className="relative overflow-hidden h-64">
                 <img
@@ -102,9 +114,18 @@ const ProjectsSection = () => {
                   </motion.a>
                 </div>
                 
-                <p className="text-muted-foreground/80 leading-relaxed mb-8 flex-grow">
+                <p className="text-muted-foreground/90 font-bold mb-4 tracking-tight">
                   {project.description}
                 </p>
+
+                <ul className="space-y-3 mb-8">
+                  {project.bullets?.map((bullet, i) => (
+                    <li key={i} className="flex items-start gap-2 text-xs text-muted-foreground/70 leading-relaxed">
+                      <div className="w-1 h-1 rounded-full bg-primary mt-1.5 shrink-0" />
+                      {bullet}
+                    </li>
+                  ))}
+                </ul>
 
                 <div className="flex items-center justify-between mt-auto">
                   <div className="flex gap-4">

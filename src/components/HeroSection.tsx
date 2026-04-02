@@ -5,8 +5,7 @@ import { useState, useEffect, useRef } from "react";
 const roles = [
   "Data Scientist",
   "Data Analyst",
-  "Machine Learning Enthusiast",
-  "Data-Driven Problem Solver"
+  "ML Enthusiast"
 ];
 
 const resumeFilePath = "/resume.pdf";
@@ -194,7 +193,7 @@ const HeroSection = () => {
             <Sparkles size={16} className="text-primary animate-pulse" />
             <span className="text-xs md:text-sm">Hi, I'm S Harsha Vardhan</span>
           </motion.div>
-          <h1 className="text-5xl md:text-8xl font-bold font-display tracking-tight leading-[1.05] text-white">
+          <h1 className="text-5xl md:text-7xl font-bold font-display tracking-tight leading-[1.05] text-white">
             <span className="text-gradient animate-background-pan bg-[length:200%_auto] block mt-2 min-h-[1.2em]">
               {currentText}
               <span className="inline-block w-[4px] h-[0.8em] bg-primary ml-2 animate-pulse align-middle" />
@@ -258,7 +257,7 @@ const HeroSection = () => {
               className="glass-premium relative px-8 py-4 rounded-xl font-bold text-white border border-white/10 hover:bg-white/10 transition-all flex items-center gap-2 group overflow-hidden"
             >
               <Download size={18} className="group-hover:translate-y-1 transition-transform" />
-              Download
+              Download Resume
             </motion.a>
           </div>
         </motion.div>

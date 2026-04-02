@@ -27,7 +27,7 @@ const FeaturedProject = ({
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
         transition={{ duration: 0.8, ease: "circOut" }}
-        className="glass-premium rounded-[2.5rem] overflow-hidden border border-white/10 group"
+        className="glass-premium rounded-[2.5rem] overflow-hidden border border-white/10 group hover:shadow-glow transition-all duration-500 hover:-translate-y-1"
       >
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-0">
           {/* Image Section */}
