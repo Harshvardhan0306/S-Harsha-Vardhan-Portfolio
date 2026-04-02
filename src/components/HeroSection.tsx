@@ -1,7 +1,6 @@
 import { motion, useScroll, useTransform, useMotionValue, useSpring } from "framer-motion";
 import { ArrowDown, FolderOpen, Download, Github, Linkedin, Mail, Sparkles, Eye } from "lucide-react";
 import { useState, useEffect, useRef } from "react";
-import BackgroundBlobs from "./BackgroundBlobs";
 
 const roles = [
   "Data Scientist",
@@ -95,15 +94,14 @@ const HeroSection = () => {
       onMouseMove={handleMouseMove}
       className="relative min-h-[100vh] flex items-center justify-center overflow-hidden py-24 md:py-32"
     >
-      <BackgroundBlobs />
       
-      {/* Cinematic Spotlight */}
+      {/* Cinematic Spotlight - Ultra Subtle Interaction */}
       <motion.div 
-        className="absolute inset-0 z-0 pointer-events-none opacity-40 md:opacity-60"
+        className="absolute inset-0 z-0 pointer-events-none opacity-[0.3] md:opacity-[0.4]"
         style={{
           background: useTransform(
             [smoothMouseX, smoothMouseY],
-            ([x, y]) => `radial-gradient(800px circle at ${Number(x) * 100}% ${Number(y) * 100}%, rgba(var(--primary-rgb), 0.1), transparent 80%)`
+            ([x, y]) => `radial-gradient(1000px circle at ${Number(x) * 100}% ${Number(y) * 100}%, rgba(var(--primary-rgb), 0.08), transparent 80%)`
           )
         }}
       />

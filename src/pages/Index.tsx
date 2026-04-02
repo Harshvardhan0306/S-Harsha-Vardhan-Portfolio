@@ -1,6 +1,7 @@
 import Navbar from "@/components/Navbar";
 import HeroSection from "@/components/HeroSection";
 import AboutMeSection from "@/components/AboutMeSection";
+import BackgroundBlobs from "@/components/BackgroundBlobs";
 import StatsSection from "@/components/StatsSection";
 import SkillsSection from "@/components/SkillsSection";
 import SoftSkillsSection from "@/components/SoftSkillsSection";
@@ -9,11 +10,11 @@ import CertificationsSection from "@/components/CertificationsSection";
 import AchievementsSection from "@/components/AchievementsSection";
 import ResumeSection from "@/components/ResumeSection";
 import ContactSection from "@/components/ContactSection";
-import WhatsAppButton from "@/components/WhatsAppButton";
 import Footer from "@/components/Footer";
 
 const Index = () => (
-  <div className="min-h-screen bg-background">
+  <div className="min-h-screen">
+    <BackgroundBlobs />
     <Navbar />
     <HeroSection />
     <AboutMeSection />
@@ -26,7 +27,6 @@ const Index = () => (
     <ResumeSection />
     <ContactSection />
     <Footer />
-    <WhatsAppButton />
   </div>
 );
 
