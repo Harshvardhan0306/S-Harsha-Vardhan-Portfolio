@@ -4,7 +4,7 @@ import { Mail, Linkedin, Github, Send } from "lucide-react";
 import SectionWrapper from "./SectionWrapper";
 
 const contactLinks = [
-  { icon: Mail, label: "haarshavardhan0306@gmail.com", href: "mailto:haarshavardhan0306@gmail.com" },
+  { icon: Mail, label: "haarshavardhan0306@gmail.com", href: "https://mail.google.com/mail/?view=cm&fs=1&to=haarshavardhan0306@gmail.com" },
   { icon: Linkedin, label: "LinkedIn", href: "https://www.linkedin.com/in/s-harsh-vardhan/" },
   { icon: Github, label: "GitHub", href: "https://github.com/Harshvardhan0306" },
 ];
@@ -45,10 +45,12 @@ const ContactSection = () => {
               <motion.a
                 whileHover={{ scale: 1.05, y: -5 }}
                 whileTap={{ scale: 0.95 }}
-                href="mailto:harshasv0306@gmail.com"
+                href="https://mail.google.com/mail/?view=cm&fs=1&to=haarshavardhan0306@gmail.com"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="flex items-center gap-3 bg-primary text-primary-foreground font-black px-10 py-5 rounded-2xl shadow-glow hover:shadow-primary/40 transition-all text-lg"
               >
-                <Mail size={24} /> Say Hello
+                <Mail size={24} /> Email Me
               </motion.a>
               
               <div className="flex gap-6">

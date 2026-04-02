@@ -63,7 +63,9 @@ const Navbar = () => {
               <motion.a
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
-                href="mailto:harshasv0306@gmail.com"
+                href="https://mail.google.com/mail/?view=cm&fs=1&to=haarshavardhan0306@gmail.com"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="bg-primary text-primary-foreground text-[10px] font-black uppercase tracking-widest px-6 py-2.5 rounded-full shadow-glow ml-4"
               >
                 Hire Me

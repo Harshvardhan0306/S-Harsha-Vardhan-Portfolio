@@ -270,7 +270,7 @@ const HeroSection = () => {
           {[
             { icon: Github, href: "https://github.com/Harshvardhan0306", color: "#fff" },
             { icon: Linkedin, href: "https://www.linkedin.com/in/s-harsh-vardhan/", color: "#0077b5" },
-            { icon: Mail, href: "mailto:harshasv0306@gmail.com", color: "hsl(var(--primary))" }
+            { icon: Mail, href: "https://mail.google.com/mail/?view=cm&fs=1&to=haarshavardhan0306@gmail.com", color: "hsl(var(--primary))" }
           ].map((social, idx) => (
             <motion.a
               key={idx}
