@@ -105,7 +105,7 @@ const ProjectsSection = () => {
                 
                 {/* Floating Tech Badges */}
                 <div className="absolute bottom-4 left-4 flex flex-wrap gap-2">
-                  {project.tech.slice(0, 2).map((t) => (
+                  {project.tech.map((t) => (
                     <span key={t} className="px-2 py-1 rounded-md bg-white/10 backdrop-blur-md border border-white/10 text-[10px] font-bold text-white tracking-widest uppercase">
                       {t}
                     </span>
