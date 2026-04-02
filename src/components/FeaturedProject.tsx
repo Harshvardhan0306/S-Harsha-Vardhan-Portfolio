@@ -74,11 +74,11 @@ const FeaturedProject = ({
               initial={{ opacity: 0, x: 20 }}
               whileInView={{ opacity: 1, x: 0 }}
               transition={{ delay: 0.4 }}
-              className="space-y-4 mb-10"
+              className="space-y-5 mb-10"
             >
               {highlights.map((highlight, idx) => (
-                <li key={idx} className="flex items-center gap-3 text-foreground/80 font-medium">
-                  <div className="w-1.5 h-1.5 rounded-full bg-primary" />
+                <li key={idx} className="flex items-start gap-4 text-foreground/90 font-medium leading-relaxed group/item">
+                  <div className="w-2 h-2 rounded-full bg-primary mt-1.5 group-hover/item:scale-150 transition-transform shadow-[0_0_10px_rgba(var(--primary-rgb),0.5)]" />
                   {highlight}
                 </li>
               ))}

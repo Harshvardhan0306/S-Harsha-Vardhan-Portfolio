@@ -193,8 +193,8 @@ const HeroSection = () => {
             <Sparkles size={16} className="text-primary animate-pulse" />
             <span className="text-xs md:text-sm">Hi, I'm S Harsha Vardhan</span>
           </motion.div>
-          <h1 className="text-5xl md:text-7xl font-bold font-display tracking-tight leading-[1.05] text-white">
-            <span className="text-gradient animate-background-pan bg-[length:200%_auto] block mt-2 min-h-[1.2em]">
+          <h1 className="text-5xl md:text-7xl font-bold font-display tracking-tight leading-[1.2] text-white">
+            <span className="text-gradient animate-background-pan bg-[length:200%_auto] block mt-4 min-h-[1.4em]">
               {currentText}
               <span className="inline-block w-[4px] h-[0.8em] bg-primary ml-2 animate-pulse align-middle" />
             </span>

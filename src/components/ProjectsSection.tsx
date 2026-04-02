@@ -6,51 +6,63 @@ import FeaturedProject from "./FeaturedProject";
 const projects = [
   {
     title: "Bird Migration Analysis",
-    description: "Data-driven study of avian movement patterns.",
+    description: "Built a high-performance analytical pipeline for avian movement patterns.",
     image: "/assets/bird.png",
     tech: ["Python", "Pandas", "Matplotlib", "Statistics"],
     github: "https://github.com/Harshvardhan0306/Migratory-Bird-Movement-Analysis-Using-Data-Analytics-",
     bullets: [
-      "Analyzed 10,000+ GPS data points to identify migration patterns",
-      "Identified spatio-temporal trends using statistical techniques",
-      "Created visualizations for biological insights and movement clarity"
+      "Analyzed 10,000+ GPS data points to identify seasonal migration trends",
+      "Developed statistical models to identify spatio-temporal bottlenecks",
+      "Visualized biological insights using advanced plotting techniques"
     ],
     isFeatured: true
   },
   {
     title: "Netflix Analysis & ML",
-    description: "Analytical study of content and predictive modeling.",
+    description: "Developed a predictive framework for streaming content success.",
     image: "/assets/netflix.png",
     tech: ["Python", "ML", "Pandas", "Scikit-Learn"],
     github: "https://github.com/Harshvardhan0306/Netflix-Dataset-Analysis-and-Machine-Learning-Modeling",
     bullets: [
-      "Processed 16k+ records for content-based insights",
-      "Built a Random Forest model with high predictive accuracy",
-      "Evaluated performance using RMSE and accuracy metrics"
+      "Processed and cleaned 16,000+ records for unbiased model training",
+      "Built a Random Forest model achieving high predictive accuracy",
+      "Implemented performance evaluation using RMSE and R-squared metrics"
     ],
   },
   {
     title: "KidGuard Parental System",
-    description: "Security-focused application for safe digital environments.",
+    description: "Designed a robust security application for child digital safety.",
     image: "/assets/kidguard.png",
     tech: ["Security", "Web Dev", "System Design"],
     github: "https://github.com/Harshvardhan0306",
     bullets: [
-      "Built a system to restrict unauthorized purchases and ads",
-      "Integrated real-time alerts for parental monitoring",
-      "Designed a robust architecture for secure system control"
+      "Developed a system to block unauthorized purchases and harmful ads",
+      "Integrated real-time notification alerts for parental monitoring",
+      "Engineered a scalable architecture for secure system management"
     ],
   },
   {
     title: "Space Invader Game",
-    description: "Classic arcade game development with OOP.",
+    description: "Engineered a classic arcade experience using OOP principles.",
     image: "/assets/space-invader.png",
     tech: ["Python", "Pygame", "OOP"],
     github: "https://github.com/Harshvardhan0306/space-Invader-Game-Development-Using-Python",
     bullets: [
-      "Developed using Python and the Pygame library",
-      "Implemented core game physics and collision detection",
-      "Structured code using Object-Oriented Programming (OOP)"
+      "Developed interactive game logic using Python and Pygame",
+      "Implemented real-time physics and collision detection systems",
+      "Architected the codebase using modular Object-Oriented design"
+    ],
+  },
+  {
+    title: "Multithreading Simulator",
+    description: "Engineered a visual simulator for operating system thread scheduling.",
+    image: "/assets/multithreading.png",
+    tech: ["Python", "OS", "Tkinter"],
+    github: "https://github.com/Harshvardhan0306/Operating-Systems",
+    bullets: [
+      "Developed a GUI-based simulator to visualize multi-threading behavior",
+      "Implemented threading models and performance monitoring metrics",
+      "Designed an interactive interface with Tkinter for process visualization"
     ],
   },
 ];
